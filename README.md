@@ -20,7 +20,7 @@
 <p class="brand">LUXURIA</p>
 
 <!--navigation bar-->
-<!-- Section for Men, Women, Juniors, Accecories-->
+
   <div class="topnav">
       <nav>
         <center>
