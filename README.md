@@ -10,7 +10,7 @@
 <head>
   <title>Luxuria</title>
   <meta charset="utf-8">
-  <meta name="author" content="Hendro Lee, Chang Kwang Yung, Shane Hanson, Joey Tan Tze Wei">
+  <meta name="author" content="Hendro Lee,Chang Kwang Yung, Shane Hanson, Joey Tan Tze Wei">
   <meta name="description" content="Luxuria">
   <meta name="keywords" content="Luxuria, fashion, kids, dress" <!-- You may add more here ! -->
 </head>
