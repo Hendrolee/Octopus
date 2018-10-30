@@ -1,29 +1,127 @@
-.topnav{
-  background-color: #000000;
-  overflow: hidden;
-  margin-bottom: 10px;
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.topnav a{
-  font-family: Arial,Helvetica,sans-serif;
-  color: #ffffff;
+*{
+    box-sizing: border-box;
+}
+
+header{
+    background-image: linear-gradient(black,rgba(0, 0, 0, 0));
+    display: block;
+    padding-top: 1.5em;
+}
+
+body{
+    background-image: url(Photocards/26869744_166215407338142_3008889010509578240_n.jpg),url(Photocards/b6ba77d40a4f5f8b88a8c9a1ec1edf63.jpg);
+	background-attachment: fixed;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    max-width:100%;
+    margin: 0 auto;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  font-weight: bold;
 }
 
-.topnav li{
+nav li {
   display: inline-block;
 }
 
-.topnav a:hover{
-  background-color: #000000;
-  color: #ddd;
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: block;
+  padding: .75em 1.75em;
 }
 
-  .test{
+nav li:hover {
+  background: #444;
+}
+
+.menu-sub {
+  position: absolute;
+  left: 0;
+  background: #444;
+  width: 100%;
+  display:none;
+  opacity: 0;
+  color: #fff;
+  padding: 2em;
+}
+
+nav li:hover .menu-sub {
+  display: block;
+  opacity: 0.95;
+  animation: drop 1s forwards;
+}
+
+@keyframes drop{
+    0%{
+        transform: translateY(-15px);
+    }
+    100%{
+        opacity: 0.95;
+        transform: translateY(0px);
+    }
+}
+
+.menu-sub li{
+    display: block;
+}
+
+.menu-sub p, .menu-sub ul{
+    text-align: left;
+}
+
+.menu-sub a{
+    padding: 5px;
+}
+
+.category{
+    margin: 2.5em 0 0.25em;
+}
+
+.category:first-of-type{
+    margin-top:0;
+}
+
+.menu-sub a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height:1px;
+    background-color: white;
+    transition: width 250ms;
+}
+
+.menu-sub a:hover::after{
+    width: 50%;
+    transition: width 500ms;
+}
+
+.column1{
+    float: left;
+}
+
+.column1{
+    width: 25%
+}
+
+.test{
     padding: 70px 0;
     font-family: "Arial",Helvetica,sans-serif;
     text-align: center;
@@ -34,14 +132,14 @@
     width: 1400px;
     margin-left: auto;
     margin-right: auto;
-  }
-  #center{
+}
+#center{
     display: block;
     height: 700px;
     width: 1400px;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
 
 
