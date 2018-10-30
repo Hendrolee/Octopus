@@ -15,11 +15,7 @@ header{
 }
 
 body{
-    background-image: url(26869744_166215407338142_3008889010509578240_n.jpg);
-	background-attachment: fixed;
-	background-position: 50%;
-	background-repeat: no-repeat;
-	background-size: 100%;
+    background-color: whitesmoke;
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
 }
