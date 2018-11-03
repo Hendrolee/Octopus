@@ -21,7 +21,7 @@
     <div class="containerky">
         <a href="#"><img id="logo" src="Luxuria_logo.png" width="229px" height="70px" alt='LUXURIA LOGO'></a>
 
-        <nav>
+        <nav id="navbar">
             <ul class="menu-main">
                 <li><a href="#">Men</a>
                     <div class="menu-sub">
@@ -341,6 +341,22 @@ function myFunction() {
     </p>
 </section>
 </body>
+  
+<!--Sript editor (For nav bar)-->
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
 
 <!--Foooter-->
 <footer>
