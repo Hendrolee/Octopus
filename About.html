@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!--Description: Group Project: Creating Website-->
+<!--Author: Hendro Lee, Chang Kwang Yung, Shane Hanson, Joey Tan Tze Wei-->
+<!--Date: 10/10/18-->
+<!--Validate: Ok ?/10/18-->
+  
+<head>
+  <title>About Luxuria</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <meta charset="utf-8">
+  <meta name="author" content="Hendro Lee,Chang Kwang Yung, Shane Hanson, Joey Tan Tze Wei">
+  <meta name="description" content="Luxuria">
+  <meta name="keywords" content="Luxuria, fashion, kids, dress"> <!-- You may add more here ! -->
+
+<style>
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.containerky img{
+    margin-bottom: .8em;
+}
+body{
+    background-color: whitesmoke;
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.containerky{
+    max-width:100%;
+    margin: 0 auto;
+    background-color:black;
+    display: block;
+    padding-top: .5em;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  color:white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav a{
+  color:white;
+  text-decoration: none;
+  display: block;
+  padding: .75em 1.75em;
+}
+
+.column1 ul li a{
+  color:black;
+}
+
+nav li:hover {                /*OMFG IDW DOUBLE LINE*/
+  text-decoration: underline;
+}
+
+.menu-sub {
+  position: absolute;
+  left: 0;
+  background: white;
+  width: 100%;
+  display:none;
+  opacity: 0;
+  color: black;
+  padding: 2em;
+  z-index: 1;
+}
+
+nav li:hover .menu-sub {
+  display: block;
+  opacity: 0.85;
+  animation: drop 1s forwards;
+}
+
+@keyframes drop{
+    0%{
+        transform: translateY(-15px);
+    }
+    100%{
+        opacity: 0.85;
+        transform: translateY(0px);
+    }
+}
+
+.menu-sub li{
+    display: block;
+}
+
+.menu-sub p, .menu-sub ul{
+    text-align: left;
+}
+
+.menu-sub a{
+    padding: 5px;
+}
+
+.category{
+    margin: 2.5em 0 0.25em;
+}
+
+.category:first-of-type{
+    margin-top:0;
+}
+
+.menu-sub a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height:1px;
+    background-color: black;
+    transition: width 250ms;
+}
+
+.menu-sub a:hover::after{
+    width: 50%;
+    transition: width 500ms;
+}
+
+.column1{
+    float: left;
+    width: 25%;
+}
+
+article p{
+    display: block;
+    margin:5em 25em;
+    line-height: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.pimg1{
+  position: relative;
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+/*
+    fixed = parallax
+    scroll = normal
+ */
+ background-image: url("about us.jpg");
+ min-height: 300px;
+  background-attachment: fixed;
+}
+</style>
+</head>
+
+<body>
+<header>
+    <div class="containerky">
+        <a href="#"><img width="169" height="59" id="logo" src="Luxuria_logo.png" alt='LUXURIA LOGO'></a>
+        <nav id="navbar">
+            <ul class="menu-main">
+                <li class='men'><a href="#">Men</a>
+                    <div class="menu-sub">
+                        <div class="column1">
+                            <p class='category'><strong>Category</strong></p>
+                            <ul>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Shirts</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="column1">
+                                <p class='category'><strong>Category</strong></p>
+                                <ul>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                </ul>
+                         </div>
+
+                         <div class="column1">
+                                <p class='category'><strong>Category</strong></p>
+                                <ul>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                </ul>
+                            </div>
+                        
+                    </div>
+                </li>
+                <li><a href="#">Women</a>
+                <div class="menu-sub">
+                        <div class="column1">
+                            <p class='category'><strong>Category</strong></p>
+                            <ul>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Shirts</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="column1">
+                                <p class='category'><strong>Category</strong></p>
+                                <ul>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                </ul>
+                        </div>
+
+                         <div class="column1">
+                                <p class='category'><strong>Category</strong></p>
+                                <ul>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                </ul>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li><a href="#">Children</a>
+                <div class="menu-sub">
+                        <div class="column1">
+                            <p class='category'><strong>Category</strong></p>
+                            <ul>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Shirts</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="column1">
+                                <p class='category'><strong>Category</strong></p>
+                                <ul>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                </ul>
+                         </div>
+
+                         <div class="column1">
+                                <p class='category'><strong>Category</strong></p>
+                                <ul>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                </li>
+                <li><a href="#">Accesories</a>
+                <div class="menu-sub">
+                        <div class="column1">
+                            <p class='category'><strong>Category</strong></p>
+                            <ul>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Shirts</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="column1">
+                                <p class='category'><strong>Category</strong></p>
+                                <ul>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                </ul>
+                         </div>
+
+                         <div class="column1">
+                                <p class='category'><strong>Category</strong></p>
+                                <ul>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                    <li><a href="#">Shirts</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                </li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="pimg1">
+            <div class="ptext">
+              <span class="border">
+                About Us
+              </span>
+            </div>
+          </div>
+</header>
+    <article>
+        <p>From chic, vintage wear to the trendiest vogue of our day and age, Luxuria has got it all and more. With Luxuria, wearing luxury and feeling luxury is all the fashion house aims for. Singularity, oneness and comfort-This is the Luxurian vision. We hope that your experience with us will be euphoric.</p>
+    </article>
+</body>
