@@ -198,10 +198,10 @@ nav li:hover .menu-sub {
 }
 
 .hoverimage{
-  width: 100%;
+  width: 90%;
   min-height: 500px;
   background: #fff;
-  margin: 70px auto 0;
+  margin: 70px auto;
   display: flex;
   float: row;
   flex-wrap: wrap;
