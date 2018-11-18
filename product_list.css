@@ -52,16 +52,34 @@
 	display: block;
 	padding: .75em 1.75em;
   }
-  
+	
+	.column1 a{
+		color:black;
+	}
+
+	.column1 a:hover{
+		color: rgb(104, 104, 104);
+	}
+
+	.column1 p{
+		display: inline-block;
+	}
+
   .column1 ul li a{
 	color:black;
+	}
+
+	.column1{
+	  float: left;
+		width: 33%;
+		text-align: left;
   }
   
   nav li:hover {
 	text-decoration: underline;
   }
   
-  nav li:hover ul li{
+  nav li:hover li{
 	text-decoration: none;
   }
   
@@ -122,15 +140,11 @@
 	  transition: width 250ms;
   }
   
-  .menu-sub a:hover::after{
+  .menu-sub li a:hover::after{
 	  width: 50%;
 	  transition: width 500ms;
   }
   
-  .column1{
-	  float: left;
-	  width: 25%
-  }
   
   
   .pimg1{
@@ -155,7 +169,6 @@
 	
 	.section-dark{
 	  background-color: #282e34;
-  
 	  color:#ddd;
 	}
 	
@@ -217,7 +230,7 @@
 		display:block;
 		margin:0;
 		width:150%;
-		transform: translateX(-15%)
+		transform: translateX(-17%)
 	}
 
 	.description{
