@@ -1,0 +1,280 @@
+.logocontainer{
+	text-align: center;
+  }
+  
+  #logo{
+	margin:0;
+  }
+  
+  *{
+	  box-sizing: border-box;
+  }
+  
+  .containerky img{
+	margin-bottom: .8em;
+  }
+  body{
+	  background-color: whitesmoke;
+	  margin:0;
+	  font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .containerky{
+	  max-width:100%;
+	  margin: 0 auto;
+	  background-color:black;
+	  display: block;
+	  padding-top: .5em;
+  }
+  
+  .content {
+	padding: 16px;
+  }
+  
+  
+  nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	text-align: center;
+  }
+  
+  nav li {
+	display: inline-block;
+	color:white;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  nav a{
+	color:white;
+	text-decoration: none;
+	display: block;
+	padding: .75em 1.75em;
+  }
+  
+  .column1 ul li a{
+	color:black;
+  }
+  
+  nav li:hover {
+	text-decoration: underline;
+  }
+  
+  nav li:hover ul li{
+	text-decoration: none;
+  }
+  
+  .menu-sub {
+	position: absolute;
+	left: 0;
+	background: white;
+	width: 100%;
+	display:none;
+	opacity: 0;
+	color: black;
+	padding: 2em;
+	z-index: 1;
+  }
+  
+  nav li:hover .menu-sub {
+	display: block;
+	opacity: 0.85;
+	animation: drop 1s forwards;
+  }
+  
+  @keyframes drop{
+	  0%{
+		  transform: translateY(-15px);
+	  }
+	  100%{
+		  opacity: 0.85;
+		  transform: translateY(0px);
+	  }
+  }
+  
+  .menu-sub li{
+	  display: block;
+  }
+  
+  .menu-sub p, .menu-sub ul{
+	  text-align: left;
+  }
+  
+  .menu-sub a{
+	  padding: 5px;
+  }
+  
+  .category{
+	  margin: 2.5em 0 0.25em;
+  }
+  
+  .category:first-of-type{
+	  margin-top:0;
+  }
+  
+  .menu-sub a::after{
+	  content: "";
+	  display: block;
+	  width: 0;
+	  height:1px;
+	  background-color: black;
+	  transition: width 250ms;
+  }
+  
+  .menu-sub a:hover::after{
+	  width: 50%;
+	  transition: width 500ms;
+  }
+  
+  .column1{
+	  float: left;
+	  width: 25%
+  }
+  
+  
+  .pimg1{
+	  position: relative;
+	  opacity: 1;
+	  background-position: center;
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	
+	/*
+		fixed = parallax
+		scroll = normal
+	 */
+	 min-height: 300px;
+	  background-attachment: fixed;
+	}
+	.section{
+	  text-align: center;
+	  padding: 50px 80px;
+	
+	}
+	
+	.section-dark{
+	  background-color: #282e34;
+  
+	  color:#ddd;
+	}
+	
+	.ptext{
+	  position: absolute;
+	  top: 50%;
+	  width: 100%;
+	  text-align: center;
+	  font-size: 27px;
+	  letter-spacing: 8px;
+	  text-transform: uppercase;
+	}
+	
+	.ptext .border{
+	  background-color: rgba(17, 17, 17, 0.55);
+	  color:#fff;
+	  padding: 20px;
+	  border-radius: 10px;
+	}
+	
+	@media(max-width:568px){
+	  .pimg1, .pimg2, .pimg3{
+		background-attachment: scroll;
+	  }
+	}
+  
+	
+  .sticky {
+	background-color: black;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+  }
+  
+  .sticky + .content {
+	padding-top: 60px;
+  }
+
+	.products{
+		text-align:center;
+		margin: 1em 0 3em 0;
+	}
+
+	.product_list{
+		position:relative;
+		display:inline-block;
+		box-shadow:0 5px 15px rgba(0,0,0,.5);
+		overflow:hidden;
+		margin: 1em .5em;
+		width:23%;
+	}
+
+	.content{
+		padding:0;
+	}
+
+	.content img{
+		display:block;
+		margin:0;
+		width:150%;
+		transform: translateX(-15%)
+	}
+
+	.description{
+		position: absolute;
+		bottom:-250px;
+		background:#fff;
+		padding:10px;
+		transition: .5s;
+		height:40%;
+		width:100%;
+		opacity: 0.9;
+	}
+
+	.description h2{
+		margin:0;
+		padding:0;
+		width:100%;
+		font-size:1.5em;
+		text-transform: uppercase;
+	}
+
+	.description span{
+		font-size: 1em;
+		color:rgb(90, 89, 89);
+		text-transform: capitalize;
+	}
+
+	.description .details{
+		color: rgb(158,158,158);
+		font-size:14px;
+	}
+
+	.description p+p{
+		height:40%;
+		overflow: auto;
+	}
+	
+ .description a{
+	display:block;
+	padding:10px;
+	color:white;
+	margin:.5em auto 1em auto;
+	background:black;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: background-color .5s ease;
+	border: black 2px solid;
+	font-size:20px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.description a:hover{
+	background-color: white;
+	color:black;
+}
+
+.product_list:hover .description{
+	bottom:0;
+}
